@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 class="heading">Music Player</h1>
+      <div class="toggle-button">
+        <div class="button-element"></div>
+        <div class="button-text">Dark</div>
+      </div>
+    </nav>
+    <main>
+      <div class="section">
+        <div>
+          <label for="song-select">Filter By Genre</label>
+          <select name="" id="song-select">
+            <option value="all">All Songs</option>
+            <option value="hiphop">Hip Hop</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+          </select>
+        </div>
+        <h2>All Songs</h2>
+        <div class="song-list"></div>
+      </div>
+      <div class="section">
+        <div class="player-container">
+          <img class="song-img" />
+          <h2 class="song-name"></h2>
+          <p class="artist-name"></p>
+        </div>
+        <div class="audio-div">
+          <audio
+            id="my-audio"
+            controls
+            src="./songs/Yesterday_320(PaglaSongs).mp3"
+          >
+            <a id="download-audio" href="./songs/Yesterday_320(PaglaSongs).mp3"
+              >Download audio</a
+            >
+          </audio>
+        </div>
+        <div id="player-button">
+          <button class="prev-button">prev</button>
+          <button class="next-button">next</button>
+        </div>
+        <div id="playlist-button">
+          <button class="playlist-button">Add To Playlist</button>
+        </div>
+      </div>
+      <div class="section">
+        <form action="" class="my-form">
+          <input
+            type="text"
+            class="my-input"
+            placeholder="Enter playlist name"
+          />
+          <input
+            id="create-playlist-button"
+            type="submit"
+            value="Create Playlist"
+          />
+        </form>
+        <h2>Current Playlist</h2>
+        <div class="curr-playlist"></div>
+        <h2>All Playlist</h2>
+        <div class="all-playlist"></div>
+      </div>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
